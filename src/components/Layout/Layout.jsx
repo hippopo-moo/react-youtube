@@ -1,7 +1,14 @@
-export default function Layout() {
+import React from "react";
+import Footer from "../Footer/Footer";
+import Header from "../Header/Header";
+
+
+export default function Layout(props) {
     return (
         <>
-            Layout
+					<Header/>
+					{props.children}
+					<Footer/>
         </>
     )
 }

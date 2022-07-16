@@ -1,7 +1,9 @@
 export default function Header() {
     return (
         <>
-            Header
+            <header>
+                <h1>YouTube App</h1>
+            </header>
         </>
     )
 }

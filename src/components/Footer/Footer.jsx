@@ -1,7 +1,9 @@
 export default function Footer() {
     return (
         <>
-            Footer
+            <footer>
+                &copy; 2022 hippopo-web
+            </footer>
         </>
     )
 }
