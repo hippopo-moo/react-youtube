@@ -1,6 +1,7 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import Layout from "../components/Layout/Layout"
 import {fetchPopularData} from '../apis/index'
+import { GlobalStateContext } from '../components/providers/GlobalStateProvider'
 
 export default function Top() {
 	const [data, setData] = useState(null);
@@ -11,6 +12,9 @@ export default function Top() {
 			console.log(data);
 		})
 	},[])
+
+	const contectValue = useContext(GlobalStateContext);
+	// console.log(contectValue);
 
 	return (
 			<Layout>
